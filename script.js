@@ -14,3 +14,12 @@ const cars = [
   { brand: 'Mercedes', model: 'Classe C', fuel: 'elettrico' },
   { brand: 'Peugeot', model: '208', fuel: 'metano' }
 ]
+
+//creare un array composto da 10 aautomobili
+// ogni oggetto automobile avrà alcune proprietà (marca, modello, alimentazione [benzina , diesel, gpl, elettrico, metano])
+//dividi le automobili in 3 array separati
+//primo array solo le autro a benzina 
+//nel secondo array solo le auto a diesel
+//nel terzo array il resto delle auto
+//stampare i risultati in console in modo separato
+
