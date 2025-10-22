@@ -19,18 +19,20 @@ const cars = [
 
 
 //dividi le automobili in 3 array separati
+/* 
 const benzinaCars = [];
 const dieselCars = [];
 const otherCars = [];
+ */
 //primo array solo le autro a benzina 
-/* const benzinaCars = cars.filter(car => car.fuel === "benzina"); */
+const benzinaCars = cars.filter(car => car.fuel === "benzina");
 
 //nel secondo array solo le auto a diesel
-
+const dieselCars = cars.filter(car => car.fuel === "diesel");
 //nel terzo array il resto delle auto
-
+const otherCars = cars.filter(car => car.fuel !== 'benzina' && car.fuel !== 'diesel');
 //con il for
-for (let i = 0; i < cars.length; i++) {
+/* for (let i = 0; i < cars.length; i++) {
   const car = cars[i];
 
   if (car.fuel === 'benzina') {
@@ -40,7 +42,7 @@ for (let i = 0; i < cars.length; i++) {
   } else {
     otherCars.push(car);
   }
-}
+} */
 
 //stampare i risultati in console in modo separato
 console.log(benzinaCars);
