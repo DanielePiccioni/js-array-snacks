@@ -2,6 +2,8 @@
 Crea un array composto da 10 automobili. Ogni oggetto automobile avrà le seguenti proprietà: marca, modello e alimentazione (benzina, diesel, gpl, elettrico, metano). Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina, nel secondo solo le auto a diesel, nel terzo il resto delle auto. Infine stampa separatamente i 3 array.
 */
 
+//creare un array composto da 10 aautomobili
+// ogni oggetto automobile avrà alcune proprietà (marca, modello, alimentazione [benzina , diesel, gpl, elettrico, metano])
 const cars = [
   { brand: 'Ford', model: 'Fiesta', fuel: 'benzina' },
   { brand: 'Toyota', model: 'Corolla', fuel: 'diesel' },
@@ -15,11 +17,13 @@ const cars = [
   { brand: 'Peugeot', model: '208', fuel: 'metano' }
 ]
 
-//creare un array composto da 10 aautomobili
-// ogni oggetto automobile avrà alcune proprietà (marca, modello, alimentazione [benzina , diesel, gpl, elettrico, metano])
+
 //dividi le automobili in 3 array separati
 //primo array solo le autro a benzina 
+const benzinaCars = cars.filter(car => car.fuel === "benzina");
 //nel secondo array solo le auto a diesel
+
 //nel terzo array il resto delle auto
+
 //stampare i risultati in console in modo separato
 
